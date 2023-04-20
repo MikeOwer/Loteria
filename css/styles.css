@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;    
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+h1{
+    margin-left: 40%;
+}
+
+.container{
+    background-color: aliceblue;
+    margin: auto;
+    width: 65vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img{
+    object-fit: cover;
+    width: 10rem;
+    height: 16rem;
+}
+

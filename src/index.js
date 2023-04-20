@@ -1,118 +1,163 @@
 //import {cartas} from '../db/cartas.js'
 
 const cartas = [
-  { nombre: "El gallo", imagen: "imagen_gallo.png" },
-  { nombre: "El diablito", imagen: "imagen_diablito.png" },
-  { nombre: "La dama", imagen: "imagen_dama.png" },
-  { nombre: "El catrín", imagen: "imagen_catrin.png" },
-  { nombre: "El paraguas", imagen: "imagen_paraguas.png" },
-  { nombre: "La sirena", imagen: "imagen_sirena.png" },
-  { nombre: "La escalera", imagen: "imagen_escalera.png" },
-  { nombre: "La botella", imagen: "imagen_botella.png" },
-  { nombre: "El barril", imagen: "imagen_barril.png" },
-  { nombre: "El árbol", imagen: "imagen_arbol.png" },
-  { nombre: "El melón", imagen: "imagen_melon.png" },
-  { nombre: "El valiente", imagen: "imagen_valiente.png" },
-  { nombre: "El gorrito", imagen: "imagen_gorrito.png" },
-  { nombre: "La muerte", imagen: "imagen_muerte.png" },
-  { nombre: "La pera", imagen: "imagen_pera.png" },
-  { nombre: "La bandera", imagen: "imagen_bandera.png" },
-  { nombre: "El bandolón", imagen: "imagen_bandolon.png" },
-  { nombre: "El violoncello", imagen: "imagen_violoncello.png" },
-  { nombre: "La garza", imagen: "imagen_garza.png" },
-  { nombre: "El pájaro", imagen: "imagen_pajaro.png" },
-  { nombre: "La mano", imagen: "imagen_mano.png" },
-  { nombre: "La bota", imagen: "imagen_bota.png" },
-  { nombre: "La luna", imagen: "imagen_luna.png" },
-  { nombre: "El cotorro", imagen: "imagen_cotorro.png" },
-  { nombre: "El borracho", imagen: "imagen_borracho.png" },
-  { nombre: "El negrito", imagen: "imagen_negrito.png" },
-  { nombre: "El corazón", imagen: "imagen_corazon.png" },
-  { nombre: "La sandía", imagen: "imagen_sandia.png" },
-  { nombre: "El tambor", imagen: "imagen_tambor.png" },
-  { nombre: "El camarón", imagen: "imagen_camarón.png" },
-  { nombre: "Las jaras", imagen: "imagen_jaras.png" },
-  { nombre: "El músico", imagen: "imagen_musico.png" },
-  { nombre: "La araña", imagen: "imagen_araña.png" },
-  { nombre: "El soldado", imagen: "imagen_soldado.png" },
-  { nombre: "La estrella", imagen: "imagen_estrella.png" },
-  { nombre: "El cazo", imagen: "imagen_cazo.png" },
-  { nombre: "El mundo", imagen: "imagen_mundo.png" },
-  { nombre: "El apache", imagen: "imagen_apache.png" },
-  { nombre: "El nopal", imagen: "imagen_nopal.png"},
-  { nombre: "El alacran", imagen: "imagen_alacran.png"},
-  { nombre: "El rosa", imagen: "imagen_rosa.png"},
-  { nombre: "El calavera", imagen: "imagen_calavera.png"},
-  { nombre: "El campana", imagen: "imagen_campana.png"},
-  { nombre: "El cantarito", imagen: "imagen_cantarito.png"},
-  { nombre: "El venado", imagen: "imagen_venado.png"},
-  { nombre: "El sol", imagen: "imagen_sol.png"},
-  { nombre: "El corona", imagen: "imagen_corona.png"},
-  { nombre: "El chalupa", imagen: "imagen_chalupa.png"},
-  { nombre: "El pino", imagen: "imagen_pino.png"},
-  { nombre: "El pescado", imagen: "imagen_pescado.png"},
-  { nombre: "El palma", imagen: "imagen_palma.png"},
-  { nombre: "El maceta", imagen: "imagen_maceta.png"},
-  { nombre: "El arpa", imagen: "imagen_arpa.png"},
-  { nombre: "El rana", imagen: "imagen_rana.png"}]
+  { nombre: "El gallo", imagen: "../Assets/img/imagen_gallo.jpg" },
+  { nombre: "El diablito", imagen: "../Assets/img/imagen_diablito.jpg" },
+  { nombre: "La dama", imagen: "../Assets/img/imagen_dama.jpg" },
+  { nombre: "El catrín", imagen: "../Assets/img/imagen_catrin.jpg" },
+  { nombre: "El paraguas", imagen: "../Assets/img/imagen_paraguas.jpg" },
+  { nombre: "La sirena", imagen: "../Assets/img/imagen_sirena.jpg" },
+  { nombre: "La escalera", imagen: "../Assets/img/imagen_escalera.jpg" },
+  { nombre: "La botella", imagen: "../Assets/img/imagen_botella.jpg" },
+  { nombre: "El barril", imagen: "../Assets/img/imagen_barril.jpg" },
+  { nombre: "El árbol", imagen: "../Assets/img/imagen_arbol.jpg" },
+  { nombre: "El melón", imagen: "../Assets/img/imagen_melon.jpg" },
+  { nombre: "El valiente", imagen: "../Assets/img/imagen_valiente.jpg" },
+  { nombre: "El gorrito", imagen: "../Assets/img/imagen_gorrito.jpg" },
+  { nombre: "La muerte", imagen: "../Assets/img/imagen_muerte.jpg" },
+  { nombre: "La pera", imagen: "../Assets/img/imagen_pera.jpg" },
+  { nombre: "La bandera", imagen: "../Assets/img/imagen_bandera.jpg" },
+  { nombre: "El bandolón", imagen: "../Assets/img/imagen_bandolon.jpg" },
+  { nombre: "El violoncello", imagen: "../Assets/img/imagen_violoncello.jpg" },
+  { nombre: "La garza", imagen: "../Assets/img/imagen_garza.jpg" },
+  { nombre: "El pájaro", imagen: "../Assets/img/imagen_pajaro.jpg" },
+  { nombre: "La mano", imagen: "../Assets/img/imagen_mano.jpg" },
+  { nombre: "La bota", imagen: "../Assets/img/imagen_bota.jpg" },
+  { nombre: "La luna", imagen: "../Assets/img/imagen_luna.jpg" },
+  { nombre: "El cotorro", imagen: "../Assets/img/imagen_cotorro.jpg" },
+  { nombre: "El borracho", imagen: "../Assets/img/imagen_borracho.jpg" },
+  { nombre: "El negrito", imagen: "../Assets/img/imagen_negrito.jpg" },
+  { nombre: "El corazón", imagen: "../Assets/img/imagen_corazon.jpg" },
+  { nombre: "La sandía", imagen: "../Assets/img/imagen_sandia.jpg" },
+  { nombre: "El tambor", imagen: "../Assets/img/imagen_tambor.jpg" },
+  { nombre: "El camarón", imagen: "../Assets/img/imagen_camaron.jpg" },
+  { nombre: "Las jaras", imagen: "../Assets/img/imagen_jaras.jpg" },
+  { nombre: "El músico", imagen: "../Assets/img/imagen_musico.jpg" },
+  { nombre: "La araña", imagen: "../Assets/img/imagen_araña.jpg" },
+  { nombre: "El soldado", imagen: "../Assets/img/imagen_soldado.jpg" },
+  { nombre: "La estrella", imagen: "../Assets/img/imagen_estrella.jpg" },
+  { nombre: "El cazo", imagen: "../Assets/img/imagen_cazo.jpg" },
+  { nombre: "El mundo", imagen: "../Assets/img/imagen_mundo.jpg" },
+  { nombre: "El apache", imagen: "../Assets/img/imagen_apache.jpg" },
+  { nombre: "El nopal", imagen: "../Assets/img/imagen_nopal.jpg" },
+  { nombre: "El alacran", imagen: "../Assets/img/imagen_alacran.jpg" },
+  { nombre: "El rosa", imagen: "../Assets/img/imagen_rosa.jpg" },
+  { nombre: "El calavera", imagen: "../Assets/img/imagen_calavera.jpg" },
+  { nombre: "El campana", imagen: "../Assets/img/imagen_campana.jpg" },
+  { nombre: "El cantarito", imagen: "../Assets/img/imagen_cantarito.jpg" },
+  { nombre: "El venado", imagen: "../Assets/img/imagen_venado.jpg" },
+  { nombre: "El sol", imagen: "../Assets/img/imagen_sol.jpg" },
+  { nombre: "El corona", imagen: "../Assets/img/imagen_corona.jpg" },
+  { nombre: "El chalupa", imagen: "../Assets/img/imagen_chalupa.jpg" },
+  { nombre: "El pino", imagen: "../Assets/img/imagen_pino.jpg" },
+  { nombre: "El pescado", imagen: "../Assets/img/imagen_pescado.jpg" },
+  { nombre: "El palma", imagen: "../Assets/img/imagen_palma.jpg" },
+  { nombre: "El maceta", imagen: "../Assets/img/imagen_maceta.jpg" },
+  { nombre: "El arpa", imagen: "../Assets/img/imagen_arpa.jpg" },
+  { nombre: "El rana", imagen: "../Assets/img/imagen_rana.jpg" },
+];
 
 // Arreglo para almacenar las cartillas ya generadas
-const cartillasGeneradas = [];
-
 //Arreglo para almacenar las cartas ya utilizadas
-const cartasSeleccionadas = [];
 
-function generarArregloAleatorio(){
-  const aleatorios = []
-  const numAleatorio = Math.floor(Math.random() * cartas.length);
+// Generar las cartillas
+function generarCartillas(nCartillas) {
+  const cartillasGeneradas = [];
   let i = 0;
-  while(i < 16){
-    if(!aleatorios.includes(numAleatorio)){
-      aleatorios.push(numAleatorio)
+  while (i < nCartillas) {
+    const nuevaCartilla = asignarCartas();
+    if (
+      !cartillasGeneradas.some(
+        (cartilla) => JSON.stringify(cartilla) === JSON.stringify(nuevaCartilla)
+      )
+    ) {
+      cartillasGeneradas.push(nuevaCartilla);
+      i++;
     }
   }
+  return cartillasGeneradas;
 }
 
 // Función para generar una cartilla de lotería
 function asignarCartas() {
   const filas = 4;
   const columnas = 4;
-  let i = 0
-  while(i < filas * columnas) {
-    if(cartasSeleccionadas.length === cartas.length){
-      cartasSeleccionadas.length = 0;
-      console.log('AydiositoRegenerator')
-    }
+  const cartasSeleccionadas = [];
+  while (cartasSeleccionadas.length < filas * columnas) {
+    // Random
+    // ----------------------------------------------------
+    //Generar carta aleatoria entre 1 y 54
     const numAleatorio = Math.floor(Math.random() * cartas.length);
     const cartaAleatoria = cartas[numAleatorio];
     if (!cartasSeleccionadas.includes(cartaAleatoria)) {
-      console.log(cartaAleatoria);
+      //console.log(cartaAleatoria);
       cartasSeleccionadas.push(cartaAleatoria);
-      i++;
-      console.log('AydiositoIF')
+      //console.log("AydiositoIF");
     }
   }
-  
+
   return cartasSeleccionadas;
 }
 
-// Generar las cartillas
-function generarCartillas(nCartillas){
-    let i = 0;
-    while (i < nCartillas) {
-      const nuevaCartilla = asignarCartas();
-      if (!cartillasGeneradas.some(cartilla =>JSON.stringify(cartilla) === JSON.stringify(nuevaCartilla))) {
-        cartillasGeneradas.push(nuevaCartilla);
-        i++;
-      }
+/* function generarArregloAleatorio() {
+  const aleatorios = [];
+  const numAleatorio = Math.floor(Math.random() * cartas.length);
+  let i = 0;
+  while (i < 16) {
+    if (!aleatorios.includes(numAleatorio)) {
+      aleatorios.push(numAleatorio);
     }
-}
+  }
+} */
 
-generarCartillas(2);
+/* generarCartillas(10);
 // Imprimir las cartillas generadas
 cartillasGeneradas.forEach((cartilla, index) => {
   console.log(`Cartilla ${index + 1}:`);
   console.table(cartilla);
 });
 
-console.log('Aydiosito')
+console.log("Aydiosito"); */
+
+function pintarCartilla(nCartillas) {
+  const cartillas = generarCartillas(nCartillas);
+  console.log(cartillas);
+  console.log(cartillas.length);
+
+  cartillas.forEach((cartilla) => {
+    console.log(cartilla);
+    const contenedor = document.createElement("div");
+    contenedor.className = "container";
+
+
+    /* 
+      0 1 2 3 
+      4 5 6 7
+      8 9 10 11
+      12 13 14 15
+    */
+    for (let indexFila = 0; indexFila < 4; indexFila++) {
+      const fila = document.createElement("div");
+      fila.className = "row";
+
+      
+      for (let indexColumna = (indexFila*4); indexColumna < (indexFila*4)+4; indexColumna++) {
+        const columna = document.createElement("div");
+        columna.className = "col";
+
+        const imagen = document.createElement("img");
+        imagen.alt = cartilla[indexColumna].nombre;
+        imagen.src = cartilla[indexColumna].imagen;
+
+        columna.appendChild(imagen);
+        fila.appendChild(columna)
+      }
+
+
+      contenedor.appendChild(fila)
+    }
+    document.getElementById("main").appendChild(contenedor)
+  });
+
+  
+}
