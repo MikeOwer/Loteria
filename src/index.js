@@ -119,29 +119,17 @@ cartillasGeneradas.forEach((cartilla, index) => {
 
 console.log("Aydiosito"); */
 
-function pintarCartilla(nCartillas) {
-  const cartillas = generarCartillas(nCartillas);
-  console.log(cartillas);
-  console.log(cartillas.length);
-
+function pintarCartilla() {
+  const numeroDeCartillas = document.getElementById("numeroDeCartillas")
+  const cartillas = generarCartillas(numeroDeCartillas.value);
   cartillas.forEach((cartilla) => {
-    console.log(cartilla);
     const contenedor = document.createElement("div");
     contenedor.className = "container";
-
-
-    /* 
-      0 1 2 3 
-      4 5 6 7
-      8 9 10 11
-      12 13 14 15
-    */
     for (let indexFila = 0; indexFila < 4; indexFila++) {
       const fila = document.createElement("div");
       fila.className = "row";
 
-      
-      for (let indexColumna = (indexFila*4); indexColumna < (indexFila*4)+4; indexColumna++) {
+      for (let indexColumna = indexFila * 4; indexColumna < indexFila * 4 + 4; indexColumna++) {
         const columna = document.createElement("div");
         columna.className = "col";
 
@@ -150,14 +138,11 @@ function pintarCartilla(nCartillas) {
         imagen.src = cartilla[indexColumna].imagen;
 
         columna.appendChild(imagen);
-        fila.appendChild(columna)
+        fila.appendChild(columna);
       }
 
-
-      contenedor.appendChild(fila)
+      contenedor.appendChild(fila);
     }
-    document.getElementById("main").appendChild(contenedor)
+    document.getElementById("main").appendChild(contenedor);
   });
-
-  
 }
